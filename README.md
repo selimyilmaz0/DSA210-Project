@@ -67,6 +67,15 @@ Significance levels and interpretation were reported for each.
 - Visualization: Matplotlib, Seaborn
 - Statistical Analysis: SciPy (Pearson/Spearman)
 
+## Findings
+- A weak but statistically significant positive correlation was found between Migrant % of Population and GDP (H₀ rejected).
+- A strong, highly significant positive correlation exists between Migrant % of Population and GNI per Capita (H₀ rejected).
+- A moderate negative correlation was observed between Migrant % of Population and Inflation Rate (H₀ rejected).
+- No statistically significant relationship was found between Migrant % of Population and Unemployment Rate (H₀ not rejected).
+- Strong positive correlations were found between Migrant % of Population and both Health and Education Expenditures (H₀ rejected).
+- A very strong positive correlation was observed between Migrant % of Population and Life Expectancy (H₀ rejected).
+- A moderate negative correlation was found between Migrant % of Population and Gini Index (H₀ rejected), suggesting that higher migration may contribute slightly to lower income inequality.
+
 ##  Limitations and Future Work
 - Some datasets (e.g., Gini Index) are incomplete for certain years
 - Causal relationships cannot be established from correlation alone
