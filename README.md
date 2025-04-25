@@ -1,29 +1,76 @@
-# DSA210-Project
-## Overview
-In this project, the relationship between immigration numbers and the economic performance of countries will be explored. Specifically, the goal is to understand how migration correlates with economic indicators such as GDP, GDP per capita, unemployment rate, and inflation. This analysis seeks to reveal information about the influence of immigration on the country's economy.
+# DSA210 Project: The Relationship Between Immigration and Economic Performance
 
-## Motivation
+##  Overview
+This project investigates the relationship between immigration trends and economic performance across selected countries from 1980 to 2024. The goal is to analyze how migration correlates with key indicators such as GDP, GDP per capita, unemployment rate, inflation, education and health expenditures, life expectancy, and income inequality (Gini index). This comprehensive analysis aims to provide data-driven insights into the socio-economic impacts of migration.
+
+##  Research Questions
+1. Does the percentage of migrants in a population significantly correlate with a country's GDP?
+2. Is there a relationship between migrant density and GNI per capita (a measure of individual wealth)?
+3. How does migration affect unemployment rates in different countries?
+4. Is there a noticeable impact of migration on social indicators such as education expenditure, health spending, and life expectancy?
+5. Does higher immigration contribute to increased or decreased income inequality, as measured by the Gini Index?
+
+##  Motivation
 The economic impact of migration is highly controversial and significant for policymaking.This study intends to shed light on the ongoing debate on immigration laws and their effects on the economy. For this purpose, the data-driven relationships between migration and economic performance indicators will be analyzed.
 
-## Data Sources
-- **Immigration Data:**
-    - **Source: World Bank and Kaggle**
-      
-- **Economic indicators:**
-    - **Source:** World Bank
-    - **Indicators**
-      - GDP
-      - GDP per capita
-      - Inflation rate
-      - Unemployment rate
-     
-- **Data Collection**
-    - Migration data will be collected using the World Bank API via Python's wbdata library.
-    - Additional supporting datasets from Kaggle will be downloaded as Excel or CSV files and imported into Python using pandas.
-    - Data from both sources will be merged on common identifiers (country ISO codes and years) to prepare a cohesive dataset for analysis.
+##  Data Sources
+- **Primary Source:** World Bank
+- **Additional Support:** Kaggle datasets (for interpolated or more recent migration data)
 
-## Data Analysis
-  - **Data Cleaning:** Handle missing data, detect and manage outliers, standardize variables.
-  - **Exploratory Data Analysis (EDA):** To observe data distributions and initial relationships, visualizations will be generated.
-  - **Correlation Analysis:** Pearson and Spearman correlations will be calculated for an evaluation of the tendency and degree of connection between immigration and economic indicators.
+###  Indicators Collected
+- **Migration Data:**
+  - Net Migration
+  - Migrant Stock (Total)
+  - Migrant % of Population (calculated)
 
+- **Economic & Social Indicators:**
+  - GDP (Current US$)
+  - GNI per Capita
+  - Unemployment Rate
+  - Inflation Rate
+  - Total Population
+  - Education Expenditure (% of GDP)
+  - Health Expenditure (% of GDP)
+  - Life Expectancy at Birth
+  - Gini Index
+The dataset has been enriched by adding some socioeconomic parameters as well as economic data.
+##  Data Collection & Cleaning
+- Raw data files stored in `/raw_data`
+- Cleaned, selected data saved in `/data`
+- Data range: 1980–2024 (where available)
+- Country focus: USA, DEU, CAN, GBR, AUS, TUR, MEX, IND. These are developed and developing countries.
+
+### Steps Taken:
+- Restructured datasets to long-format
+- Filtered by country and year
+- Handled missing values and standardization
+
+##  Exploratory Data Analysis (EDA)
+- Descriptive statistics for all indicators
+- Time-series trends (e.g., migrant % of population over time)
+- Heatmap visualization of indicator correlations
+- Country-level comparisons
+
+##  Hypothesis Tests
+Conducted Pearson and Spearman correlation tests on:
+- Migrant % of Population vs GDP
+- Migrant % of Population vs GNI per Capita
+- Migrant % of Population vs Unemployment Rate
+- Migrant % of Population vs Education & Health Expenditure
+- Migrant % of Population vs Life Expectancy
+- Migrant % of Population vs Gini Index
+
+Significance levels and interpretation were reported for each.
+
+##  Tools Used
+- Python (Pandas, NumPy)
+- Visualization: Matplotlib, Seaborn
+- Statistical Analysis: SciPy (Pearson/Spearman)
+
+##  Limitations and Future Work
+- Some datasets (e.g., Gini Index) are incomplete for certain years
+- Causal relationships cannot be established from correlation alone
+- Future work could include regression or machine learning-based prediction models
+
+##  Conclusion
+This project presents an empirical overview of how migration interacts with economic and social development. Insights may inform academic debate and policy considerations related to migration economics.
