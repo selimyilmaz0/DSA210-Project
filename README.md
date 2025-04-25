@@ -52,14 +52,13 @@ The dataset has been enriched by adding some socioeconomic parameters as well as
 - Heatmap visualization of indicator correlations
 - Country-level comparisons
 
-##  Hypothesis Tests
-Conducted Pearson and Spearman correlation tests on:
-- Migrant % of Population vs GDP
-- Migrant % of Population vs GNI per Capita
-- Migrant % of Population vs Unemployment Rate
-- Migrant % of Population vs Education & Health Expenditure
-- Migrant % of Population vs Life Expectancy
-- Migrant % of Population vs Gini Index
+##  Hypotheses
+###  Economic Hypothesis:
+- **H₀ (Null Hypothesis):** Migrant % of Population has no significant effect on core economic indicators (GDP, GNI per capita, Unemployment Rate, Inflation).
+- **H₁ (Alternative Hypothesis):** Migrant % of Population significantly affects core economic indicators.
+###  Socioeconomic Hypothesis:
+- **H₀ (Null Hypothesis):** Migrant % of Population has no significant effect on social indicators (Education Expenditure, Health Expenditure, Life Expectancy, Gini Index).
+- **H₁ (Alternative Hypothesis):** Migrant % of Population significantly affects social indicators.
 
 Significance levels and interpretation were reported for each.
 
