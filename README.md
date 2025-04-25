@@ -33,12 +33,13 @@ The economic impact of migration is highly controversial and significant for pol
   - Health Expenditure (% of GDP)
   - Life Expectancy at Birth
   - Gini Index
+
 The dataset has been enriched by adding some socioeconomic parameters as well as economic data.
 ##  Data Collection & Cleaning
 - Raw data files stored in `/raw_data`
 - Cleaned, selected data saved in `/data`
 - Data range: 1980–2024 (where available)
-- Country focus: USA, DEU, CAN, GBR, AUS, TUR, MEX, IND. These are developed and developing countries.
+- Country focus: USA, DEU, CAN, GBR, AUS, TUR, MEX, IND. These are developed and developing countries with the highest migration traffic.
 
 ### Steps Taken:
 - Restructured datasets to long-format
