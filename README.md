@@ -107,7 +107,7 @@ We aimed to predict the log-transformed GDP of selected countries using migratio
    - R² score: 0.824
    - RMSE: 0.347
 ### Results & Interpretation
-Random Forest provided the strongest predictive power, outperforming both linear regression and a single decision tree. Feature importance analysis revealed that log(GNI per Capita), Life Expectancy, and Health Expenditure were the most influential in predicting GDP.
+Random Forest provided the strongest predictive power, outperforming both linear regression and a single decision tree. Feature importance analysis revealed that log(GNI per Capita), Health Expenditure, Gini Index, and Migrant % of Population were the most influential in predicting GDP.
 
 
 ![Feature Importance](images/feature_importance.png)
