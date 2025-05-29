@@ -76,10 +76,41 @@ Significance levels and interpretation were reported for each.
 - A very strong positive correlation was observed between Migrant % of Population and Life Expectancy (H₀ rejected).
 - A moderate negative correlation was found between Migrant % of Population and Gini Index (H₀ rejected), suggesting that higher migration may contribute slightly to lower income inequality.
 
-##  Limitations and Future Work
-- Some datasets (e.g., Gini Index) are incomplete for certain years
-- Causal relationships cannot be established from correlation alone
-- Future work could include regression or machine learning-based prediction models
+## Machine Learning Section
 
-##  Conclusion
-This project presents an empirical overview of how migration interacts with economic and social development. Insights may inform academic debate and policy considerations related to migration economics.
+### Objective
+We aimed to predict the log-transformed GDP of selected countries using migration rates and a combination of economic and social indicators from 1980–2024.
+
+### Features Used
+- Migrant % of Population
+- log(GNI per Capita)
+- Unemployment Rate
+- Inflation Rate
+- Health Expenditure (% GDP)
+- Education Expenditure (% GDP)
+- Life Expectancy
+- Gini Index
+
+### Transformations
+- Applied log transformation to GDP and GNI per Capita to handle scale differences.
+
+### Models Applied
+1. **Linear Regression**
+   - R² score: 0.896
+   - RMSE: 0.267
+
+2. **Decision Tree Regressor**
+   - R² score: 0.860
+   - RMSE: 0.309
+
+3. **Random Forest Regressor**
+   - R² score: 0.824
+   - RMSE: 0.347
+### Results & Interpretation
+Random Forest provided the strongest predictive power, outperforming both linear regression and a single decision tree. Feature importance analysis revealed that [fill in top features from plot] were the most influential in predicting GDP.
+
+### Visualizations Included
+- Actual vs Predicted plots for each model.
+- Feature Importance (Random Forest).
+- Residual Distribution plots for Random Forest and Decision Tree.
+
