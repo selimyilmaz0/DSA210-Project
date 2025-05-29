@@ -107,10 +107,32 @@ We aimed to predict the log-transformed GDP of selected countries using migratio
    - R² score: 0.824
    - RMSE: 0.347
 ### Results & Interpretation
-Random Forest provided the strongest predictive power, outperforming both linear regression and a single decision tree. Feature importance analysis revealed that [fill in top features from plot] were the most influential in predicting GDP.
+Random Forest provided the strongest predictive power, outperforming both linear regression and a single decision tree. Feature importance analysis revealed that log(GNI per Capita), Life Expectancy, and Health Expenditure were the most influential in predicting GDP.
+
+
+![Feature Importance](images/feature_importance.png)
+![Actual vs Predicted](images/actual_vs_predicted.png)
 
 ### Visualizations Included
 - Actual vs Predicted plots for each model.
 - Feature Importance (Random Forest).
 - Residual Distribution plots for Random Forest and Decision Tree.
+
+## Requirements
+
+- Python 3.10+
+- pandas==2.0.3
+- numpy==1.24.3
+- scikit-learn==1.2.2
+- matplotlib==3.7.1
+- seaborn==0.12.2
+- scipy==1.10.1
+
+  
+## Limitations and Future Work
+
+- Some datasets had missing or incomplete years, which may affect long-term trend analysis.
+- The models are trained without hyperparameter tuning; further optimization could improve performance.
+- Future work can include adding time series models, expanding the feature set (e.g., political stability, trade balance), or using ensemble methods like XGBoost.
+- Causal analysis or policy impact simulations could provide even deeper insights.
 
