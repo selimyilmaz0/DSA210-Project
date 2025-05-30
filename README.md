@@ -76,7 +76,7 @@ Significance levels and interpretation were reported for each.
 - A very strong positive correlation was observed between Migrant % of Population and Life Expectancy (H₀ rejected).
 - A moderate negative correlation was found between Migrant % of Population and Gini Index (H₀ rejected), suggesting that higher migration may contribute slightly to lower income inequality.
 
-## Machine Learning Section
+## Machine Learning
 
 ### Objective
 We aimed to predict the log-transformed GDP of selected countries using migration rates and a combination of economic and social indicators from 1980–2024.
